@@ -1,0 +1,43 @@
+@import '~bootstrap/scss/_functions.scss';
+@import './helpers/variables.scss';
+// @import 'bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+$wolf: '../image/wolf.png';
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.topbar {
+    padding: .75rem 1rem;
+    text-align: center;
+    color: white;
+}
+.content {
+    padding: .75rem 1rem;
+}
+.footer {
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-top: auto;
+    background-color: lightslategray;
+}
+
+.wolf {
+    width: 150px;
+    height: 150px;
+    background-image: url($wolf);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.example {
+    transition: all .5s;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
